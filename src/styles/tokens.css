@@ -1,0 +1,126 @@
+/* ==========================================================================
+   DESIGN TOKENS
+   ========================================================================== */
+:root {
+  /* Spacing — 4pt scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+  --space-40: 160px;
+
+  /* Type */
+  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+
+  /* Type scale (fluid) */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 0.9375rem);
+  --text-base: clamp(0.9375rem, 0.9rem + 0.25vw, 1rem);
+  --text-lg: clamp(1.0625rem, 1rem + 0.35vw, 1.1875rem);
+  --text-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --text-3xl: clamp(1.875rem, 1.5rem + 1.5vw, 2.5rem);
+  --text-4xl: clamp(2.25rem, 1.8rem + 2vw, 3.25rem);
+  --text-5xl: clamp(2.75rem, 2rem + 3vw, 4.5rem);
+  --text-6xl: clamp(3.25rem, 2.2rem + 4.5vw, 6rem);
+  --text-hero: clamp(3rem, 2rem + 6vw, 7.5rem);
+
+  /* Radii */
+  --r-xs: 4px;
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-xl: 22px;
+  --r-2xl: 28px;
+  --r-3xl: 36px;
+  --r-full: 999px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --t-fast: 150ms var(--ease);
+  --t: 280ms var(--ease);
+  --t-slow: 500ms var(--ease);
+
+  /* Layout */
+  --container: 1240px;
+  --nav-h: 68px;
+
+  /* Dark theme (default) */
+  --bg: #07070b;
+  --bg-2: #0c0c14;
+  --bg-3: #14141e;
+  --surface: rgba(255, 255, 255, 0.025);
+  --surface-2: rgba(255, 255, 255, 0.05);
+  --surface-hover: rgba(255, 255, 255, 0.07);
+  --border: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.14);
+
+  --text: #ededf0;
+  --text-2: #a0a0aa;
+  --text-3: #66666f;
+
+  --accent: #818cf8;
+  --accent-2: #a78bfa;
+  --accent-3: #f0abfc;
+  --accent-bg: rgba(129, 140, 248, 0.1);
+  --accent-border: rgba(129, 140, 248, 0.25);
+
+  --gradient: linear-gradient(135deg, #818cf8 0%, #a78bfa 50%, #f0abfc 100%);
+  --gradient-soft: linear-gradient(135deg, rgba(129, 140, 248, 0.12), rgba(240, 171, 252, 0.12));
+  --gradient-text: linear-gradient(135deg, #c7d2fe 0%, #ddd6fe 40%, #f5d0fe 100%);
+
+  --success: #34d399;
+  --danger: #fb7185;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 30px 80px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 60px rgba(129, 140, 248, 0.2);
+
+  /* Cursor */
+  --cursor-dot: 10px;
+  --cursor-ring: 40px;
+}
+
+:root.light {
+  --bg: #fafafa;
+  --bg-2: #f3f3f5;
+  --bg-3: #e7e7ea;
+  --surface: rgba(15, 15, 25, 0.025);
+  --surface-2: rgba(15, 15, 25, 0.045);
+  --surface-hover: rgba(15, 15, 25, 0.07);
+  --border: rgba(15, 15, 25, 0.08);
+  --border-strong: rgba(15, 15, 25, 0.16);
+
+  --text: #0a0a10;
+  --text-2: #4d4d57;
+  --text-3: #76767f;
+
+  --accent: #6366f1;
+  --accent-2: #a855f7;
+  --accent-3: #d946ef;
+  --accent-bg: rgba(99, 102, 241, 0.07);
+  --accent-border: rgba(99, 102, 241, 0.2);
+
+  --gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #d946ef 100%);
+  --gradient-soft: linear-gradient(135deg, rgba(99, 102, 241, 0.07), rgba(217, 70, 239, 0.07));
+  --gradient-text: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #c026d3 100%);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 30px 80px rgba(0, 0, 0, 0.1);
+  --shadow-glow: 0 0 60px rgba(99, 102, 241, 0.12);
+}

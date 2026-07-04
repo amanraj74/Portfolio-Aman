@@ -1,0 +1,26 @@
+node_modules/
+dist/
+dist-ssr/
+.env
+.env.local
+.env.*.local
+
+.DS_Store
+Thumbs.db
+*.log
+
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Legacy (pre-React) artifacts
+legacy/
