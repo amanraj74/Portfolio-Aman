@@ -499,16 +499,17 @@ main { position: relative; z-index: 2; }
   line-height: 1.6;
 }
 .hero-subtitle strong { color: var(--text); font-weight: 600; }
-.hero-role-line {
-  display: inline-block;
+.hero-role-pill {
+  display: inline-flex;
+  align-items: center;
   font-family: var(--font-mono);
   font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: var(--space-4);
-  padding: 0.3rem 0.7rem;
+  margin: 0 auto var(--space-4);
+  padding: 0.4rem 0.85rem;
   background: var(--accent-bg);
   border: 1px solid var(--accent-border);
   border-radius: var(--r-full);

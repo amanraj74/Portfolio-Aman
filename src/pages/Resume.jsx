@@ -29,13 +29,13 @@ function SkillBar({ value, name }) {
 
 const education = [
   {
-    role: 'Minor in AI & Machine Learning',
+    role: 'Major in AI & Machine Learning',
     org: 'Indian Institute of Technology — Ropar',
     period: '2025 — 2026',
     desc: 'Specialized program covering machine learning, deep learning, neural networks, NLP, and generative AI.',
   },
   {
-    role: 'Bachelor of Computer Applications (BCA)',
+    role: 'BSc Computer Science',
     org: 'Ranchi University, Ranchi',
     period: '2023 — 2027',
     desc: 'Undergraduate degree with a focus on programming, web development, and software engineering.',

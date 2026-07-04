@@ -46,8 +46,8 @@ export default function Home() {
             </h1>
 
             <FadeIn delay={0.45} y={20}>
+              <div className="hero-role-pill">{profile.role}</div>
               <p className="hero-subtitle">
-                <span className="hero-role-line">{profile.role}</span>
                 <strong>AI/ML engineer.</strong> Research at IIT Ropar (Annam.ai) and NIT Kurukshetra. Previously at Infosys and HEProAI. Top-10 at IIT Madras, winner at IISc Bangalore, winner at IIT BHU Varanasi.
               </p>
             </FadeIn>
