@@ -43,18 +43,16 @@ export default function Home() {
                   <span className="gradient-text">that actually ship.</span>
                 </TextReveal>
               </span>
-              <span className="hero-title-line hero-role">
-                <TextReveal delay={0.5} stagger={0.025}>{profile.role}</TextReveal>
-              </span>
             </h1>
 
-            <FadeIn delay={0.6} y={20}>
+            <FadeIn delay={0.45} y={20}>
               <p className="hero-subtitle">
-                I'm <strong>{profile.name}</strong> — an AI/ML engineer from India working at the seam of research and production. Currently researching multilingual speech at IIT Ropar. Previously shipped ML systems at Infosys, Codec Technologies, and HEProAI.
+                <span className="hero-role-line">{profile.role}</span>
+                <strong>AI/ML engineer.</strong> Research at IIT Ropar (Annam.ai) and NIT Kurukshetra. Previously at Infosys and HEProAI. Top-10 at IIT Madras, winner at IISc Bangalore, winner at IIT BHU Varanasi.
               </p>
             </FadeIn>
 
-            <FadeIn delay={0.7} y={20}>
+            <FadeIn delay={0.6} y={20}>
               <div className="hero-actions">
                 <MagneticLink to="/projects" className="btn-primary">
                   View selected work
@@ -66,27 +64,22 @@ export default function Home() {
               </div>
             </FadeIn>
 
-            <div className="hero-marquee">
+            <ul className="hero-marquee">
               {stats.map((s, i) => (
-                <motion.div
+                <motion.li
                   key={i}
                   className="hero-stat"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.9 + i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+                  transition={{ duration: 0.6, delay: 0.85 + i * 0.08, ease: [0.16, 1, 0.3, 1] }}
                 >
-                  <div className="hero-stat-num">
+                  <span className="hero-stat-num">
                     <CountUp value={s.num} suffix={s.suffix} decimals={s.decimals || 0} />
-                  </div>
-                  <div className="hero-stat-label">{s.label}</div>
-                </motion.div>
+                  </span>
+                  <span className="hero-stat-label">{s.label}</span>
+                </motion.li>
               ))}
-            </div>
-
-            <div className="hero-scroll" aria-hidden="true">
-              <span>Scroll</span>
-              <div className="hero-scroll-line" />
-            </div>
+            </ul>
           </div>
         </motion.div>
       </section>
