@@ -89,12 +89,12 @@ export default function Resume() {
                       </div>
                       <div className="date">{e.period}</div>
                     </div>
-                    <p>{e.desc}</p>
                     {e.highlights && e.highlights.length > 0 && (
-                      <div className="project-tech" style={{ borderTop: 'none', paddingTop: 'var(--space-2)' }}>
-                        {e.highlights.map((h) => <span key={h}>{h}</span>)}
-                      </div>
+                      <ul className="resume-highlights">
+                        {e.highlights.map((h) => <li key={h}>{h}</li>)}
+                      </ul>
                     )}
+                    <p>{e.desc}</p>
                   </article>
                 ))}
               </StaggerReveal>

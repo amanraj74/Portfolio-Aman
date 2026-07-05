@@ -19,10 +19,10 @@ export const profile = {
 };
 
 export const stats = [
-  { num: 10, suffix: '+', label: 'Projects shipped' },
-  { num: 22, suffix: '+', label: 'Languages modeled' },
-  { num: 5, suffix: '+', label: 'Research roles' },
-  { num: 1.8, suffix: 'K+', label: 'Hackathon registrations', decimals: 1 },
+  { num: 2, suffix: '×', label: 'National Winner', detail: 'IISc · IIT BHU' },
+  { num: 4, suffix: '×', label: 'IIT Hackathon Finalist', detail: 'Top-10 Shaastra' },
+  { num: 2, suffix: '×', label: 'Research Intern', detail: 'IIT Ropar · NIT Kurukshetra' },
+  { num: 22, suffix: '+', label: 'Indic Languages Modeled' },
 ];
 
 export const capabilities = [
@@ -157,11 +157,11 @@ export const projects = [
 
 export const experience = [
   {
-    period: '2026 — Present',
-    role: 'AI Research Intern',
-    org: 'IIT Ropar · Annam.ai Consortium',
-    desc: 'Conducting large-scale ASR experiments across 22+ Indic languages, including low-resource dialects. Designed multilingual speech datasets, fine-tuned transformer-based acoustic models, and shipped inference pipelines behind FastAPI microservices for downstream research teams.',
-    highlights: ['22+ languages', 'Multilingual ASR', 'FastAPI microservices'],
+    period: 'Jun 2026 — Present',
+    role: 'AI Engineer · Military Intelligence',
+    org: 'Bharat Space Education Research Centre (BSERC)',
+    desc: 'Developing ML and data-analytics solutions for military intelligence and threat analysis. Building dashboards and pipelines that surface decision-ready signals from heterogeneous data sources.',
+    highlights: ['Defense analytics', 'Data pipelines', 'Decision support'],
   },
   {
     period: 'May 2026 — Present',
@@ -169,6 +169,34 @@ export const experience = [
     org: 'National Institute of Technology, Kurukshetra',
     desc: 'Research in NLP, model training, and optimization. Built evaluation harnesses for reproducibility, profiled training runs to reduce GPU-hours, and prototyped lightweight fine-tuning recipes (LoRA / prefix-tuning) on top of open-source LLMs.',
     highlights: ['Reproducibility', 'Training optimization', 'LoRA fine-tuning'],
+  },
+  {
+    period: 'May — Jul 2026',
+    role: 'Open Source Contributor',
+    org: 'GirlScript Summer of Code 2026',
+    desc: 'Contributed to real-world open-source projects across the Open Source and AI/Agents tracks. Built intelligent systems end-to-end and collaborated with maintainers and the wider community.',
+    highlights: ['OSS contributions', 'AI/Agents track', 'Community'],
+  },
+  {
+    period: 'Jan 2026 — Present',
+    role: 'Assistance Partner Apprentice (on-site)',
+    org: 'Kotak Life',
+    desc: 'Apprenticeship exploring AI applications in insurance and financial services. Working with product, data, and engineering teams to understand how regulated industries adopt ML-driven workflows.',
+    highlights: ['Insurance domain', 'On-site', 'Cross-functional'],
+  },
+  {
+    period: 'Jan — Mar 2026',
+    role: 'AI/ML Intern',
+    org: 'HEProAI',
+    desc: 'Worked across NLP and applied ML pipelines, translating research prototypes into shippable APIs. Implemented data preprocessing, model evaluation, and integration with backend services; collaborated with senior engineers on production deployments.',
+    highlights: ['NLP pipelines', 'Production deployment', 'Backend integration'],
+  },
+  {
+    period: 'Jul 2025 — Jan 2026',
+    role: 'AI Research Intern',
+    org: 'IIT Ropar · Annam.ai',
+    desc: 'Conducted large-scale ASR experiments across 22+ Indic languages, including low-resource dialects. Designed multilingual speech datasets, fine-tuned transformer-based acoustic models, and shipped inference pipelines behind FastAPI microservices for downstream research teams.',
+    highlights: ['22+ languages', 'Multilingual ASR', 'FastAPI microservices'],
   },
   {
     period: '2025',
@@ -181,15 +209,8 @@ export const experience = [
     period: 'Jun — Jul 2025',
     role: 'AI Intern',
     org: 'Codec Technologies (AICTE & ICAC Certified)',
-    desc: 'Completed a one-month AICTE & ICAC certified intensive. Shipped two production-style ML projects end-to-end: a Stock Price Predictor (regression with engineered features) and a Twitter Sentiment Analysis system (NLP pipeline with model evaluation).',
+    desc: 'Completed a one-month intensive AICTE & ICAC certified program. Shipped two production-style ML projects end-to-end: a Stock Price Predictor (regression with engineered features) and a Twitter Sentiment Analysis system (NLP pipeline with model evaluation).',
     highlights: ['2 shipped projects', 'ML + NLP', 'AICTE & ICAC certified'],
-  },
-  {
-    period: 'Jan — Mar 2026',
-    role: 'AI/ML Intern',
-    org: 'HEProAI',
-    desc: 'Worked across NLP and applied ML pipelines, translating research prototypes into shippable APIs. Implemented data preprocessing, model evaluation, and integration with backend services; collaborated with senior engineers on production deployments.',
-    highlights: ['NLP pipelines', 'Production deployment', 'Backend integration'],
   },
 ];
 

@@ -16,7 +16,7 @@ export default function Home() {
   const heroY = useTransform(scrollYProgress, [0, 1], [0, 120]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
-  const featuredProjects = projects.slice(0, 4);
+  const featuredProjects = [projects[0], projects[1]];
   const topExperience = experience.slice(0, 3);
   const topAchievements = achievements.slice(0, 6);
 
@@ -77,39 +77,12 @@ export default function Home() {
                     <CountUp value={s.num} suffix={s.suffix} decimals={s.decimals || 0} />
                   </span>
                   <span className="hero-stat-label">{s.label}</span>
+                  {s.detail && <span className="hero-stat-detail">{s.detail}</span>}
                 </motion.li>
               ))}
             </ul>
           </div>
         </motion.div>
-      </section>
-
-      {/* SELECTED WORK */}
-      <section className="section" id="work">
-        <div className="container">
-          <FadeIn>
-            <div className="section-header">
-              <span className="eyebrow">Selected Work</span>
-              <h2 className="section-title">AI/ML projects built end-to-end.</h2>
-              <p className="lead">A short list of things I've designed, trained, and shipped — from multilingual speech to real-time logistics copilots.</p>
-            </div>
-          </FadeIn>
-
-          <StaggerReveal stagger={0.08} delay={0.1} className="projects-list">
-            {featuredProjects.map((p) => (
-              <ProjectCard key={p.id} project={p} />
-            ))}
-          </StaggerReveal>
-
-          <FadeIn delay={0.3}>
-            <div className="text-center" style={{ marginTop: 'var(--space-12)' }}>
-              <MagneticLink to="/projects" className="btn btn-secondary">
-                View all projects
-                <Icon name="arrow-right" size={16} />
-              </MagneticLink>
-            </div>
-          </FadeIn>
-        </div>
       </section>
 
       {/* ABOUT (compact) */}
@@ -154,6 +127,34 @@ export default function Home() {
               </div>
             </FadeIn>
           </div>
+        </div>
+      </section>
+
+      {/* SELECTED WORK */}
+      <section className="section" id="work">
+        <div className="container">
+          <FadeIn>
+            <div className="section-header">
+              <span className="eyebrow">Selected Work</span>
+              <h2 className="section-title">AI/ML projects built end-to-end.</h2>
+              <p className="lead">A short list of things I've designed, trained, and shipped — from multilingual speech to real-time logistics copilots.</p>
+            </div>
+          </FadeIn>
+
+          <StaggerReveal stagger={0.08} delay={0.1} className="projects-list">
+            {featuredProjects.map((p) => (
+              <ProjectCard key={p.id} project={p} />
+            ))}
+          </StaggerReveal>
+
+          <FadeIn delay={0.3}>
+            <div className="text-center" style={{ marginTop: 'var(--space-12)' }}>
+              <MagneticLink to="/projects" className="btn btn-secondary">
+                View all projects
+                <Icon name="arrow-right" size={16} />
+              </MagneticLink>
+            </div>
+          </FadeIn>
         </div>
       </section>
 

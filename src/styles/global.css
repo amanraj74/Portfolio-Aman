@@ -580,6 +580,14 @@ main { position: relative; z-index: 2; }
   color: var(--text-3);
   white-space: nowrap;
 }
+.hero-stat-detail {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-top: var(--space-1);
+  font-weight: 500;
+  white-space: nowrap;
+}
 
 .hero-scroll {
   display: none;
@@ -1303,6 +1311,25 @@ main { position: relative; z-index: 2; }
   font-size: 0.9375rem;
   color: var(--text-2);
   line-height: 1.65;
+}
+.resume-highlights {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  padding: 0;
+}
+.resume-highlights li {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  padding: 0.25rem 0.625rem;
+  background: var(--accent-bg);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--r-full);
+  font-weight: 500;
 }
 
 .resume-aside {
