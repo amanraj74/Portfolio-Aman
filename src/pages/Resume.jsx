@@ -81,7 +81,8 @@ export default function Resume() {
               </FadeIn>
               <StaggerReveal stagger={0.06}>
                 {experience.map((e, i) => (
-                  <article className="resume-card" key={i}>
+                  <article className={`resume-card ${e.featured ? 'resume-card--featured' : ''}`} key={i}>
+                    {e.featured && <span className="resume-card-flag">★ Featured</span>}
                     <div className="resume-card-head">
                       <div>
                         <h3>{e.role}</h3>

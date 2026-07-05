@@ -1312,6 +1312,31 @@ main { position: relative; z-index: 2; }
   color: var(--text-2);
   line-height: 1.65;
 }
+.resume-card--featured {
+  position: relative;
+  border-color: var(--accent-border);
+  background:
+    radial-gradient(ellipse 600px 200px at 50% 0%, var(--accent-bg), transparent 60%),
+    var(--surface);
+  box-shadow: var(--shadow-md), 0 0 0 1px var(--accent-border);
+}
+.resume-card-flag {
+  position: absolute;
+  top: -10px;
+  right: var(--space-5);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0.2rem 0.625rem;
+  background: var(--gradient);
+  color: #07070b;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: var(--r-full);
+}
 .resume-highlights {
   list-style: none;
   display: flex;

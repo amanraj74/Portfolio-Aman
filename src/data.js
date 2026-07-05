@@ -157,6 +157,14 @@ export const projects = [
 
 export const experience = [
   {
+    period: 'Jul 2025 — Jan 2026',
+    role: 'AI Research Intern',
+    org: 'IIT Ropar · Annam.ai',
+    desc: 'Conducted large-scale ASR experiments across 22+ Indic languages, including low-resource dialects. Designed multilingual speech datasets, fine-tuned transformer-based acoustic models, and shipped inference pipelines behind FastAPI microservices for downstream research teams.',
+    highlights: ['22+ languages', 'Multilingual ASR', 'FastAPI microservices'],
+    featured: true,
+  },
+  {
     period: 'Jun 2026 — Present',
     role: 'AI Engineer · Military Intelligence',
     org: 'Bharat Space Education Research Centre (BSERC)',
@@ -190,13 +198,6 @@ export const experience = [
     org: 'HEProAI',
     desc: 'Worked across NLP and applied ML pipelines, translating research prototypes into shippable APIs. Implemented data preprocessing, model evaluation, and integration with backend services; collaborated with senior engineers on production deployments.',
     highlights: ['NLP pipelines', 'Production deployment', 'Backend integration'],
-  },
-  {
-    period: 'Jul 2025 — Jan 2026',
-    role: 'AI Research Intern',
-    org: 'IIT Ropar · Annam.ai',
-    desc: 'Conducted large-scale ASR experiments across 22+ Indic languages, including low-resource dialects. Designed multilingual speech datasets, fine-tuned transformer-based acoustic models, and shipped inference pipelines behind FastAPI microservices for downstream research teams.',
-    highlights: ['22+ languages', 'Multilingual ASR', 'FastAPI microservices'],
   },
   {
     period: '2025',
