@@ -86,6 +86,9 @@ export default function Resume() {
                     <div className="resume-card-head">
                       <div>
                         <h3>{e.role}</h3>
+                        {e.projectTitle && (
+                          <div className="resume-card-title">{e.projectTitle}</div>
+                        )}
                         <div className="role">{e.org}</div>
                       </div>
                       <div className="date">{e.period}</div>
@@ -95,7 +98,13 @@ export default function Resume() {
                         {e.highlights.map((h) => <li key={h}>{h}</li>)}
                       </ul>
                     )}
-                    <p>{e.desc}</p>
+                    {e.bullets && e.bullets.length > 0 ? (
+                      <ul className="resume-bullets">
+                        {e.bullets.map((b, bi) => <li key={bi}>{b}</li>)}
+                      </ul>
+                    ) : (
+                      <p>{e.desc}</p>
+                    )}
                   </article>
                 ))}
               </StaggerReveal>

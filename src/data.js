@@ -165,11 +165,17 @@ export const experience = [
     featured: true,
   },
   {
-    period: 'Jun 2026 — Present',
-    role: 'AI Engineer · Military Intelligence',
-    org: 'Bharat Space Education Research Centre (BSERC)',
-    desc: 'Developing ML and data-analytics solutions for military intelligence and threat analysis. Building dashboards and pipelines that surface decision-ready signals from heterogeneous data sources.',
-    highlights: ['Defense analytics', 'Data pipelines', 'Decision support'],
+    period: 'Jun — Jul 2026',
+    role: 'BSERC Intern',
+    projectTitle: 'OSCAR — AI-Based Military Intelligence & Threat Analysis Dashboard',
+    org: 'Bharat Space Education Research Centre',
+    desc: 'Designed and shipped an open-source AI/ML dashboard for military intelligence and threat analysis across 50+ countries.',
+    bullets: [
+      'Architected and shipped OSCAR, an open-source OSINT dashboard that fuses GDELT global events, NewsAPI, Reddit, weather, and markets into a 10-page interactive Streamlit UI for defense-relevant threat analysis across 50+ countries.',
+      'Built an 8-layer data pipeline (ingestion → silver → NLP → ML) with 7 source-specific scrapers, Pydantic v2 validation, spaCy NER, DistilBERT sentiment, XGBoost-based escalation classifier (3 horizons), Prophet forecaster, and Isolation Forest anomaly detector.',
+      'Delivered as a production-grade release: 213 tests passing, 68% coverage, ruff/black/mypy clean, multi-stage Docker image, full model registry with MLflow tracking. MIT-licensed and live on GitHub.',
+    ],
+    highlights: ['OSCAR dashboard', 'GDELT + 7 sources', '213 tests passing'],
   },
   {
     period: 'May 2026 — Present',

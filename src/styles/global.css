@@ -1292,6 +1292,13 @@ main { position: relative; z-index: 2; }
   font-weight: 600;
   margin-bottom: var(--space-1);
 }
+.resume-card-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: var(--space-1);
+  font-family: var(--font-mono);
+}
 .resume-card .role {
   font-size: 0.875rem;
   color: var(--accent);
@@ -1356,6 +1363,29 @@ main { position: relative; z-index: 2; }
   border-radius: var(--r-full);
   font-weight: 500;
 }
+.resume-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-4);
+}
+.resume-bullets li {
+  position: relative;
+  padding-left: var(--space-5);
+  margin-bottom: var(--space-3);
+  font-size: 0.9375rem;
+  color: var(--text-2);
+  line-height: 1.65;
+}
+.resume-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 8px;
+  height: 1.5px;
+  background: var(--accent);
+}
+.resume-bullets li:last-child { margin-bottom: 0; }
 
 .resume-aside {
   display: flex;
