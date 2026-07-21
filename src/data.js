@@ -192,7 +192,7 @@ export const experience = [
     highlights: ['OSS contributions', 'AI/Agents track', 'Community'],
   },
   {
-    period: 'Jan 2026 — Present',
+    period: 'Jan 2026 — Jun 2026',
     role: 'Assistance Partner Apprentice (on-site)',
     org: 'Kotak Life',
     desc: 'Apprenticeship exploring AI applications in insurance and financial services. Working with product, data, and engineering teams to understand how regulated industries adopt ML-driven workflows.',
